@@ -1,0 +1,52 @@
+<section>
+    <h4>Employee Details</h4>
+     <div class="container">
+        <form class="form-horizontal">
+            <div class="row">
+            <div class="col-sm-6 image-col">
+                <div class="row">
+                    <div class="form-group">
+                        <div class="col-sm-12">
+                            <img src={{image}} class="img-thumbnail" alt="no profile image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 detail-col">
+                <div class="row">
+                  <div class="form-group">
+                    <label class="col-sm-6 control-label">Name</label>
+                    <label class="col-sm-6 control-label data-label">{{name}}</label>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-6 control-label">Title</label>
+                    <label class="col-sm-6 control-label data-label">{{title}}</label>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-6 control-label">Phone</label>
+                    <label class="col-sm-6 control-label data-label">{{phone}}</label>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-6 control-label">Email</label>
+                    <label class="col-sm-6 control-label data-label">{{email}}</label>
+                  </div>
+                  <div class="form-group">
+                      <label class="col-sm-6 control-label">Manager</label>
+                      <label class="col-sm-6 control-label data-label"><a ng-href="#/viewDetail/{{manager_id}}">{{manager}}</a></label>
+                  </div>
+                  <div class="form-group">
+                      <label class="col-sm-6 control-label">Direct Reports#</label>
+                      <label class="col-sm-6 control-label data-label" ng-click="setFilter()"><a ng-href="#/list">{{directReports}}</a></label>
+                  </div>
+                </div>
+          </div>
+            </div>
+            <div class="row">
+                <div col-sm-2 col-sm-offset-8>
+                    <a ng-href="#/list"><button class="btn btn-success">Back</button></a>
+                </div>
+            </div>
+        </form>
+       
+    </div>
+</section>

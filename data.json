@@ -1,0 +1,90 @@
+{
+ "data":[
+     {
+        "name" : "Patt Weiss",
+        "title" : "CEO",
+        "sex": "Male",
+        "startDate" : "2003-00-01",
+        "officePhone" : "123456",
+        "SMS": "123456",
+        "email": "patt@yahoo.com"
+
+     },
+     {
+        "name" : "Will Smith",
+        "title" : "Engineer",
+        "sex": "Male",
+        "startDate" : "2004-02-02",
+        "officePhone" : "123456",
+        "SMS": "123456",
+        "email": "will@yahoo.com"
+
+     },
+     {
+        "name" : "John Smith",
+        "title" : "HR",
+        "sex": "Male",
+        "startDate" : "2004-02-02",
+        "officePhone" : "123456",
+        "SMS": "123456",
+        "email": "will@yahoo.com"
+
+     },
+     
+     {
+        "name" : "Angel jolie",
+        "title" : "VP",
+        "sex": "Female",
+        "startDate" : "2005-02-02",
+        "officePhone" : "123456",
+        "SMS": "123456",
+        "email": "joli@yahoo.com"
+
+     },
+     {
+        "name" : "Shawn Mendez",
+        "title" : "Lead",
+        "sex": "Male",
+        "startDate" : "2005-02-02",
+        "officePhone" : "123456",
+        "SMS": "123456",
+        "email": "shawn@yahoo.com"
+
+     },
+     
+     {
+        "name" : "Coldplay",
+        "title" : "Singer",
+        "sex": "Male",
+        "startDate" : "2008-02-02",
+        "officePhone" : "123456",
+        "SMS": "123456",
+        "email": "cold@yahoo.com"
+
+     },
+     
+      {
+        "name" : "Bob PAttinson",
+        "title" : "CO",
+        "sex": "Male",
+        "startDate" : "2000-02-02",
+        "officePhone" : "123456",
+        "SMS": "123456",
+        "email": "bob@yahoo.com"
+
+     },
+     
+      {
+        "name" : "Ashley Jude",
+        "title" : "CO",
+        "sex": "Female",
+        "startDate" : "2000-02-09",
+        "officePhone" : "123456",
+        "SMS": "123456",
+        "email": "ash@yahoo.com"
+
+     }
+     
+     
+     
+]}

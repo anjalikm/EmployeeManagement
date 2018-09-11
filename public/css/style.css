@@ -1,0 +1,94 @@
+.jumbotron{
+    background-color:#33D1FF;
+    height:100px;
+    padding-bottom:0px;
+}
+.action-div{
+    
+    padding-bottom:40px;
+}
+th {
+    background-color:#33D1FF !important;
+}
+.home-div{
+    float:left;
+    width:50%;
+}
+.create-div{
+    float:right;
+    width:50%;
+    align-content: right;
+}
+
+.create-div a {
+    float:right;
+    align-content: right;
+}
+.notFound{
+    background-color:orangered;
+}
+.image-col{
+    padding-left:100px;
+}
+.detail-row{
+    padding-right:300px;
+    padding-top:20px;
+}
+.profile-pic{
+    border-radius: 50%;
+    width: 80px;
+    height:80px;
+    
+}
+
+.thumb {
+    width: 100px;
+    height: 100px;
+    float: none;
+    position: relative;
+    top: 7px;
+}
+
+.data-label{
+    text-align:left !important;
+    color:black;
+}
+.btn-top{
+    position:fixed;
+    height:60px;
+    width:60px;
+    bottom: 20px; 
+    right: 20px; 
+    border-radius:50%;
+}
+.btn {
+    background-color:#33D1FF;
+}
+.btn-danger {
+     background-color:#900C3F;
+}
+
+/* employee detail page */
+.header-row, .detail-row{
+    background-color:darkgray;
+}
+.profile-image{
+    border-radius:50%;
+    height:200px;
+    width:200px;
+}
+.name-header{
+     text-transform: uppercase;
+    text-align:center;
+    font-size:30px;
+    padding-top:80px;
+     padding-top:80px;
+    
+}
+.sub-header{
+     text-transform:none;
+     font-family:cursive;
+}
+.contact-list{
+    list-style:none;
+}

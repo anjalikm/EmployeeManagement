@@ -1,0 +1,44 @@
+<section>
+
+    <div class="action-div">
+        <div class="home-div">
+            <button type="button" class="btn btn-info" ng-click="goToHome()"><span class="glyphicon glyphicon-home"></span></button>
+        </div>
+        
+        <div class="create-div">
+             <input type="text" ng-model="searchText" placeholder="search" ng-class="notFound()">
+            <a ng-href="#/add"><button type="button" class="btn btn-info">Create New Employee</button></a>
+        </div>
+    </div>
+    <br>
+    <div infinite-scroll="loadMore()" infinite-scroll-distance="2" infinite-scroll-listen-for-event="directReports:reporters">
+    <table class="table table-striped ">
+       
+        <tr>
+            <th> Image </th>
+            <th ng-click="orderByMe('name')"> Name <i class="glyphicon glyphicon-menu-up" ng-show="isAscend"></i>
+            <i class="glyphicon glyphicon-menu-down" ng-show="isDescend"></i></th>
+            <th> Title </th>
+            <th> Phone </th>
+            <th> Email </th>
+            <th> Manager</th>
+            <th ng-click="orderByMe('directReports.length')"> Direct Reports </th>
+            <th> Action </th>
+        </tr>
+            <tr ng-repeat ="emp in filteredEmps | directReports:reporters | orderBy:myOrderBy">
+                <td ><img src={{emp.image}} class="profile-pic"></td>
+                <td ><a ng-href="#/viewDetail/{{emp._id}}">{{emp.name}}</a></td>
+                <td>{{emp.title}}</td>
+                <td><a href="tel:{{emp.phone}}">{{emp.phone}}</a></td>
+                <td><a href="mailto:{{emp.email}}">{{emp.email}}</a></td>
+                <td><a ng-href="#/viewDetail/{{emp.manager}}">{{getName(emp.manager)}}</a></td>
+                <td ng-click="filterBy(emp.directReports)">{{emp.directReports.length}}</td>
+                <td>
+                    <a href="#/edit/{{emp._id}}"><button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-pencil"></span></button></a>
+                    <button type="button" class="btn btn-danger" ng-click="deleteEmployee(emp._id)"><span class="glyphicon glyphicon-trash"></span></button>
+                </td>
+            </tr>
+        <button class="btn btn-success btn-top" ng-click="goToTop()">Top</button>
+    </table>
+    </div><!--end of Div infinite-scroll-->
+</section>
